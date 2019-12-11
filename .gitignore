@@ -142,3 +142,5 @@ cloudiOPersistenceData.db
 src/main/resources/cloud.io/bc0f1bf8-bdae-11e9-9cb5-2a2ae2dbcce4.p12
 
 src/main/resources/cloud.io/ca-cert.jks
+
+src/main/resources/cloud.io/bc0f1bf8-bdae-11e9-9cb5-2a2ae2dbcce4.properties

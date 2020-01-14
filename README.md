@@ -15,17 +15,17 @@ You'll have to have the following files in the resources/cloud.io directory acco
   - "endpointUUID".p12
   - ca-cert.jks
 
-You'll also have to modify the [Heater.java](https://github.com/lucblender/cloudio-endpointHeater-demo/blob/master/src/main/java/Heater.java) at line 14 and insert your endpoutUUID.
+You'll also have to modify the [Heater.java](https://github.com/lucblender/cloudio-endpointHeater-demo/blob/master/src/main/java/Heater.java) at line 14 and insert your enpointUUID.
 
 ## cloud.iO Endpoint structure
 
 The model (following cloud.iO Endpoint->Node->Object->Attribute template) of the heater is the following:
-  - myHeater.DemoHeater.DemoTemperatures.temperature
+  - "enpointUUID".myHeater.temperatures.temperature
     - Represent the ambiant temperature, will try to follow the set point
-  - myHeater.DemoHeater.DemoTemperatures.setPointTemperature
+  - "enpointUUID".myHeater.temperatures.setPointTemperature
     - Represent the set point temperature
 
 Those two attributes can be access via grafana, the RESTFull API or with mqtt subscribes:
-  - @update/myHeater/DemoHeater/DemoTemperatures/temperature
-  - @set/myHeater/DemoHeater/DemoTemperatures/setPointTemperature
+  - @update/"enpointUUID"/myHeater/temperatures/temperature
+  - @set/"enpointUUID"/myHeater/temperatures/setPointTemperature
 
